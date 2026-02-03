@@ -26,5 +26,5 @@ jobs:
         working-directory: env/dev
 
       - name: Terraform Apply
-        run: terraform apply -auto-approve
+        run: terraform apply -auto-approve -lock-timeout=5m
         working-directory: env/dev
