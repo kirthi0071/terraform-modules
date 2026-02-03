@@ -9,6 +9,9 @@ jobs:
   terraform-plan:
     runs-on: ubuntu-latest
 
+    env:
+      TF_VAR_project_id: ${{ secrets.TF_PROJECT_ID }}
+
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v4
