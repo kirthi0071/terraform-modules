@@ -1,4 +1,4 @@
-module "dev_vpc" {
+module "dev_vpc_test" {
 
   source = "../../modules/vpc"
 
